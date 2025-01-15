@@ -2,11 +2,10 @@ provider "aws" {
   region = "us-west-2"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI (HVM), SSD Volume Type
+resource "aws_instance" "lesson_07" {
+  ami           = "ami-0c7c4e3c6b4941f0f"
   instance_type = "t2.micro"
-
   tags = {
-    Name = "ExampleInstance"
+    Name      = "Lesson-07-Variables!!!"
   }
 }
